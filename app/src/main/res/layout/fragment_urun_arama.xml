@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/urunHolder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".UrunAramaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Ürün Arama"
+            android:textColor="@color/login"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleUrunAd"
+            android:layout_width="359dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="50dp"
+            app:boxStrokeColor="@color/button_text"
+            app:hintTextColor="@color/button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtUrunAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:hint="Ürün Adı"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleUrunFiyat"
+            android:layout_width="359dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="50dp"
+            app:boxStrokeColor="@color/button_text"
+            app:hintTextColor="@color/button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleUrunAd">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtUrunFiyat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:hint="Ürün Fiyatı"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleCategory"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="359dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="50dp"
+            android:popupBackground="@color/white"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/button_text"
+            app:hintTextColor="@color/button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleUrunFiyat">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/txtCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:dropDownListViewStyle="@style/CustomDropDownStyle"
+                android:fontFamily="@font/inter_semibold"
+                android:hint="Categori"
+                android:inputType="none"
+                android:popupBackground="@color/white"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnAra"
+            android:layout_width="178dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="@color/button_text"
+            android:text="Ara"
+            app:layout_constraintEnd_toStartOf="@+id/ic_delete"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleCategory" />
+
+        <ImageView
+            android:id="@+id/ic_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/ic_delete_yellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnAra"
+            app:layout_constraintTop_toBottomOf="@+id/titleCategory" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

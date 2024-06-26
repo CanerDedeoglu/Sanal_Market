@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "204769130663",
+    "project_id": "final-9ceb2",
+    "storage_bucket": "final-9ceb2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204769130663:android:d98a31de29b4509e068382",
+        "android_client_info": {
+          "package_name": "com.canerdedeoglu.afinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIvCAxi9vz7t3npoRkMWv_ZhObAVWhBG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

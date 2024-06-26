@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Final</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Categories">
+        <item>Beauty</item>
+        <item>Fragrances</item>
+        <item>Furniture</item>
+        <item>Groceries</item>
+        <item>Home Decoration</item>
+        <item>Kitchen Accessories</item>
+        <item>Laptops</item>
+        <item>Mens Shirts</item>
+        <item>Mens Shoes</item>
+        <item>Mens Watches</item>
+        <item>Mobile Accessories</item>
+        <item>Motorcycle</item>
+        <item>Skin Care</item>
+        <item>Smartphones</item>
+        <item>Sports Accessories</item>
+        <item>Sunglasses</item>
+        <item>Tablets</item>
+        <item>Tops</item>
+        <item>Vehicle</item>
+        <item>Womens Bags</item>
+        <item>Womens Dresses</item>
+        <item>Womens Jewellery</item>
+        <item>Women Shoes</item>
+        <item>Women Watches</item>
+
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

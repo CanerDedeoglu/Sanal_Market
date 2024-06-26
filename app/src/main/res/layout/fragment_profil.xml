@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ProfilFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtProfileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/inter_extrabolditalic"
+            android:text="Kullanıcı Bilgileri"
+            android:textAlignment="center"
+            android:textColor="@color/home"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- LinearLayout for user profile details -->
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtProfileTitle">
+
+            <!-- Profile Image -->
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="178dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/txtUsernameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_blackitalic"
+                android:text="Username : "
+                android:textColor="@color/button_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bolditalic"
+                android:text="Username"
+                android:textColor="@color/login"
+                android:textSize="16sp" />
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/txtNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_blackitalic"
+                android:text="Name : "
+                android:textColor="@color/button_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bolditalic"
+                android:text="Name"
+                android:textColor="@color/login"
+                android:textSize="16sp" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/txtEmailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_blackitalic"
+                android:text="Email : "
+                android:textColor="@color/button_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bolditalic"
+                android:text="Email"
+                android:textColor="@color/login"
+                android:textSize="16sp" />
+
+            <!-- Phone -->
+            <TextView
+                android:id="@+id/txtPhoneTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_blackitalic"
+                android:text="Phone : "
+                android:textColor="@color/button_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bolditalic"
+                android:text="Phone"
+                android:textColor="@color/login"
+                android:textSize="16sp" />
+
+            <!-- Birth Date -->
+            <TextView
+                android:id="@+id/txtBirthDateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_blackitalic"
+                android:text="Birth Date : "
+                android:textColor="@color/button_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBirthDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bolditalic"
+                android:text="Birth Date"
+                android:textColor="@color/login"
+                android:textSize="16sp" />
+
+            <!-- Gender -->
+            <TextView
+                android:id="@+id/txtGenderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_blackitalic"
+                android:text="Gender : "
+                android:textColor="@color/button_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bolditalic"
+                android:text="Gender"
+                android:textColor="@color/login"
+                android:textSize="16sp" />
+
+            <!-- University -->
+            <TextView
+                android:id="@+id/txtUniversityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_blackitalic"
+                android:text="University : "
+                android:textColor="@color/button_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtUniversity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bolditalic"
+                android:text="University"
+                android:textColor="@color/login"
+                android:textSize="16sp" />
+
+            <!-- Company -->
+            <TextView
+                android:id="@+id/txtCompanyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_blackitalic"
+                android:text="Company : "
+                android:textColor="@color/button_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCompany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bolditalic"
+                android:text="Company"
+                android:textColor="@color/login"
+                android:textSize="16sp" />
+
+            <!-- Department -->
+            <TextView
+                android:id="@+id/txtDepartmentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_blackitalic"
+                android:text="Department : "
+                android:textColor="@color/button_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bolditalic"
+                android:text="Department"
+                android:textColor="@color/login"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Button to edit profile -->
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/button_text"
+            android:paddingStart="24dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="8dp"
+            android:text="Düzenle"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+        <!-- ProgressBar for loading state -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.canerdedeoglu.afinal.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/actionToMain"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.canerdedeoglu.afinal.MainFragment"
+        android:label="fragment_main">
+        <action
+            android:id="@+id/actionToAnasayfa"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.canerdedeoglu.afinal.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_favorite_to_details"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/begenilenUrunlerFragment"
+        android:name="com.canerdedeoglu.afinal.BegenilenUrunlerFragment"
+        android:label="fragment_begenilen_urunler">
+        <action
+            android:id="@+id/action_favorite_to_details"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.canerdedeoglu.afinal.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/actionToProduct"
+            app:destination="@id/productListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/siparislerimFragment"
+        android:name="com.canerdedeoglu.afinal.SiparislerimFragment"
+        android:label="fragment_siparislerim"
+        tools:layout="@layout/fragment_siparislerim" />
+    <fragment
+        android:id="@+id/urunAramaFragment"
+        android:name="com.canerdedeoglu.afinal.UrunAramaFragment"
+        android:label="fragment_urun_arama"
+        tools:layout="@layout/fragment_urun_arama" >
+        <action
+            android:id="@+id/actionToSearch"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.canerdedeoglu.afinal.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <argument
+            android:name="Products"
+            app:argType="com.canerdedeoglu.afinal.models.Products" />
+        <action
+            android:id="@+id/action_favorite_to_details"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.canerdedeoglu.afinal.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="product"
+            app:argType="com.canerdedeoglu.afinal.models.Product"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="favorite"
+            app:argType="com.canerdedeoglu.afinal.models.Favorite"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.canerdedeoglu.afinal.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/actionToEditProfile"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.canerdedeoglu.afinal.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <argument
+            android:name="User"
+            app:argType="com.canerdedeoglu.afinal.models.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.canerdedeoglu.afinal.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" >
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_favorite_to_details"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+</navigation>
